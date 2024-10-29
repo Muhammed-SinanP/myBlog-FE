@@ -14,7 +14,7 @@ function Home() {
   const perpage = 2;
   useEffect(() => {
     getData(pageNo);
-  }, []);
+  }, [pageNo]);
   const nextPage = (newPageNo) => {
     navigate(`/${newPageNo}`);
     getData(newPageNo);
